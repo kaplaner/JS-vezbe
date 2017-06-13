@@ -1,0 +1,45 @@
+<style>
+	img {
+		float: left;
+		margin: 10px;
+	}
+</style>
+<body>
+
+<button type="button">
+		<img src="the_monopoly_cat_vbgkd_Pak101(dot)com.jpg" alt="Cat with hat" style="width:304px; height:228px;">
+</button>
+<p id="cat1">0</p>
+
+
+<button type="button">
+		<img src="girls-top.net_1356132670_784.jpg" alt="Cat in the but" style="width:304px; height:228px;">
+</button>
+<p id="cat2">0</p>
+
+<script>
+
+document.getElementById("cat1").addEventListener("click", myCounter);
+document.getElementById("cat2").addEventListener("click", myCounter);
+
+var add1 = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+
+var add2 = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+
+function myCounter(){
+    document.getElementById("cat1").innerHTML = add1();
+
+};
+function myCounter(){
+    document.getElementById("cat2").innerHTML = add2();
+
+};
+
+</script>
+</body>

@@ -1,0 +1,15 @@
+
+<body>
+var a = {"apples": 3, "oranges": 4, "bananas": 42};    
+
+var array_keys = new Array();
+var array_values = new Array();
+
+for (var key in a) {
+    array_keys.push(key);
+    array_values.push(a[key]);
+}
+
+alert(array_keys);
+alert(array_values);
+</body>

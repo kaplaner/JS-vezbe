@@ -1,0 +1,39 @@
+<style>
+	div {
+		float: left;
+		margin: 10px;
+	}
+</style>
+<body>
+<div>
+<button type="button" onclick="myCounter()">
+		<img src="the_monopoly_cat_vbgkd_Pak101(dot)com.jpg" alt="Cat with hat" style="width:304px; height:228px;">
+</button>
+<p id="cat">0</p>
+</div>
+<div>
+<button type="button" onclick="myCounter1()">
+		<img src="girls-top.net_1356132670_784.jpg" alt="Cat in the but" style="width:304px; height:228px;">
+</button>
+<p id="cat1">0</p>
+</div>
+<script>
+
+var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+
+function myCounter(){
+    document.getElementById("cat").innerHTML = add();
+};
+
+var add1 = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+function myCounter1(){
+    document.getElementById("cat1").innerHTML = add1();
+};
+</script>
+</body>
