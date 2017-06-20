@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<style>
+  #id01 {
+    background-color: #9B59B6;
+    color: white;
+    width: 25%;
+    padding-bottom: 350px;
+  }
+
+  input {
+    width: 25%;
+    height: 25px;
+    background-color: white;
+    color: #9B59B6;
+    margin-bottom: 25px;
+  }
+   h1, p {
+    color: #9B59B6;
+   }
+</style>
+<body>
+
+<h1>Filter List</h1>
+
+<p>Search for a name in the input field:</p>
+
+<input oninput="w3.filterHTML('#id01', 'li', this.value)" placeholder="Search for names..">
+
+<ul id="id01">
+  <li>Alfreds</li>
+  <li>Berglunds</li>
+  <li>Centro</li>
+  <li>Ernst</li>
+  <li>FISSA</li>
+  <li>Galería</li>
+  <li>Island</li>
+  <li>Essen</li>
+  <li>Laughing</li>
+  <li>Magazzini</li>
+  <li>North/South</li>
+  <li>Paris</li>
+  <li>Rattlesnake</li>
+  <li>Simons</li>
+  <li>The</li>
+  <li>Vaffeljernet</li>
+  <li>Wolski</li>
+</ul>
+
+</body>
+</html>
