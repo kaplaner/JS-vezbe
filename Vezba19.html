@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>CKEditor</title>
+        <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style type="text/css">
+        	body {
+        	}
+        	h1 {
+        		max-width: 500px;
+        		font-size: 45px;
+        		text-align: left;
+        		color: black;
+        		margin: 30px 10px 10px 30px;
+        	}
+
+        	h3 {
+        		width: 150px; 
+        		font-size: 18px;
+        		height: 25px;
+        		margin: 10px 30px 5px 30px;
+        		border: 1px solid lightblue        	}        	
+
+        	select {
+        		width: 150px; 
+        		height: 22px;
+        		font-size: 18px;
+        		margin: 15px 30px 15px 30px;
+        	}
+        	select:hover {
+        		background-color: lightblue;
+        	}
+        	
+        	option {
+        		font-size: 18px;
+        	}
+        	
+        	div {
+        		max-width: 700px;
+        		height: 100px;
+        		margin: 100px 10px 10px 30px;
+        	}
+        	@media screen and (min-width: 480px) {
+   				body {
+        			background-color: white;
+    			}
+			}
+        </style>
+    </head>
+    <body>
+    	<h1>Tasks Announcements</h1><br><hr><br>
+    	
+    	<h3>Mentors:</h3>
+    	<select id="selection1">
+			<option selected>Mentors</option>
+			<option value="Mentors">Mark Bush</option>
+		   	<option value="Mentors">Luis Devon</option>
+		   	<option value="Mentors">Luke Adams</option>
+		   	<option value="Mentors">Mihael Given</option>
+		</select>
+		
+		<h3>Mentees:</h3>
+		<select id="selection2">
+			<option selected>Mentees</option>
+			<option value="Mentee">Daren Peters</option>
+			<option value="Mentee">Loren Michale</option>
+			<option value="Mentee">Robert Goren</option>
+			<option value="Mentee">Dick Trump</option>
+		</select>
+		<div>
+	    <textarea name="editor1">type here...</textarea>
+        </div>
+
+        <script>
+            CKEDITOR.replace( 'editor1' );
+
+        </script>
+
+    </body>
+</html>
+

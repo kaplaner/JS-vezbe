@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Summernote</title>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.4/summernote.js"></script>
+  <style type="text/css">
+    body {
+      background-color: grey;
+    }
+    p {
+      max-width: 500px;
+      font-size: 45px;
+      text-align: left;
+      color: lightblue;
+      margin: 30px 10px 30px 30px;
+      border: 1px solid lightblue;
+    }
+    div {
+      max-width: 700px;
+      border: 1px solid lightblue;
+    }
+  </style>
+</head>
+<body style="padding: 30px;">
+  <p><strong>Tasks Announcements</strong></p>
+
+  
+  <div id="summernote">Hello Summernote</div>
+  <script>
+    $(document).ready(function() {
+        $('#summernote').summernote();
+    });
+    $('#summernote').summernote({
+  toolbar: [
+    // [groupName, [list of button]]
+    ['style', ['bold', 'italic', 'underline', 'clear']],
+    ['font', ['strikethrough', 'superscript', 'subscript']],
+    ['fontsize', ['fontsize']],
+    ['color', ['color']],
+    ['para', ['ul', 'ol', 'paragraph']],
+    ['height', ['height']],
+    ['picture', ['picture']]
+  ]
+});
+
+  </script>
+</body>
+</html>

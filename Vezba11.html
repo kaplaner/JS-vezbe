@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<button onclick="myFunc()">Try it</button>
+
+<p id="demo"></p>
+
+	<script>
+		function myFunc() {
+			var doSomething = ["Mirko", "Zivko", "Slavko", "Zarko"];
+			var some = prompt('whats your name', 'Maybe Goran?');
+			var somele;
+
+			switch (some) {
+
+				case (somele.toLowerCase() === "Mirko"):
+				somele = doSomething.push('Dane');
+					break;
+				case (some.toLowerCase() || some.toUpperCase() === "zivko"):
+				some = doSomething.sort();
+					break;
+				case (some.toLowerCase() || some.toUpperCase() === "slavko"):
+				some = doSomething.sort();
+					break;
+				case (some.toLowerCase() || some.toUpperCase() === "zarko"):
+					some = doSomething.sort();
+					break;
+				default: 
+					function somer() {
+						alert("there is no valid input in placeholder");
+					}; 
+					somer();
+
+
+			} 
+		}
+		document.getElementById('demo').innerHTML = somele; 
+
+	</script>
+</body>
+</html>

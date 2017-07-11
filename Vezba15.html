@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Font-awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+	body {
+		background-color: grey;
+	}
+
+	.content {
+   		max-width: 800px;
+    	margin: auto;
+    	background-color: white;
+    	padding: 10px;
+   }
+   @media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+	#header {
+		margin-top: 50px;
+		max-width: 700px;
+		color: lightblue;
+		border: 1px solid lightblue;
+		display: flex;
+
+	}
+    
+    .pb-cmnt-container {
+    	max-width: 700px;
+        font-family: Lato;
+        font-size: 25px;
+        margin-top: 100px;
+        color: white;
+        border: 1px solid lightblue;
+        flex: 1;
+    }
+
+    .pb-cmnt-textarea {
+    	resize: none;
+        padding: 20px;
+        height: 250px;
+        width: 100%;
+        border: 1px solid #F2F2F2;
+        background-color: lightblue;
+
+    }
+
+    .form-inline1 {
+    	width: 100%;
+    	border: 1px solid lightblue;
+
+    }
+    
+</style>
+</head>
+<body>
+<div class="content">
+<div class="container" id="header">
+	<h1 class="col-md-8 col-md-offset-1">Tasks Announcements</h1>
+</div>
+	<div class="container pb-cmnt-container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-info">
+                <div class="panel-body">
+                
+                	<form class="form-inline1">
+                        <div class="btn-group">
+		                   	<button class="btn" type="button"><span class="fa fa-header"></span></button>
+							<button class="btn" type="button"><span class="fa fa-bold"></span></button>
+                            <button class="btn" type="button"><span class="fa fa-italic"></span></button>
+                           	<button class="btn" type="button"><span class="fa fa-underline"></span></button>
+                         	<button class="btn" type="button"><span class="fa fa-quote-left " ></span></button>
+
+							<button class="btn" type="button"><span class="fa fa-list-ul"></span></button>
+                            <button class="btn" type="button"><span class="fa fa-list-ol"></span></button>
+                            <button class="btn" type="button"><span class="fa fa-link"></span></button>
+                           
+                            <button class="btn" type="button"><span class="fa fa-align-center"></span></button>
+                         	<button class="btn" type="button"><span class="fa fa-align-justify"></span></button>
+                         	<button class="btn" type="button"><span class="fa fa-align-left"></span></button>
+                         	<button class="btn" type="button"><span class="fa fa-align-right"></span></button>
+
+                        </div>
+                	</form>
+                    
+                	<textarea placeholder="Write your comment here!" class="pb-cmnt-textarea"></textarea>
+                    
+                 	<form class="form-inline2">
+                        <div class="btn-group">
+                            
+                            <button class="btn" type="button"><span class="fa fa-picture-o fa-lg"></span></button>
+                            <button class="btn" type="button"><span class="fa fa-video-camera fa-lg"></span></button>
+                            <button class="btn" type="button"><span class="fa fa-microphone fa-lg"></span></button>
+                            <button class="btn" type="button"><span class="fa fa-music fa-lg"></span></button>
+                        </div>
+                        <button class="btn btn-primary pull-right" type="button"><b>Submit</b></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>

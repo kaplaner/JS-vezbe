@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</style>
+</head>
+<body>
+	<button onclick="myFunction()" style="color: white; background-color: blue; width: 500px; height: 50px;">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var text;
+    var favDrink = prompt("What's your favorite cocktail drink?");
+    switch(favDrink) {
+        case "martini":
+        case "Martini":
+        case "MARTINI":
+        text = "Excellent choice. Martini is good for your soul.";
+        break;
+        case "daiquiri":
+    	case "Daiquiri":
+    	case "DAIQUIRI":
+        text = "Daiquiri is my favorite too!";
+        break;
+        case "cosmopolitan":
+        case "Cosmopolitan":
+        case "COSMOPOLITAN":
+        text = "Really? Are you sure the Cosmopolitan is your favorite?";
+        break;
+        default:
+        	function someFunc() {
+        		function someF() {
+        			alert('soommemthing');
+        		}
+        		someF();
+        	}
+        	someFunc();
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+</body>
+</html>
